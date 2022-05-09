@@ -13,7 +13,7 @@ if(isset($_GET['id'])){
 <div class="content py-3">
     <div class="card card-outline card-primary shadow rounded-0">
         <div class="card-header">
-            <h3 class="card-title"><b><?= isset($id) ? "Update Student Details - ". $roll : "New Student" ?></b></h3>
+            <h3 class="card-title"><b><?= isset($id) ? "Update Student Details - " : "New Student" ?></b></h3>
         </div>
         <div class="card-body">
             <div class="container-fluid">
@@ -50,7 +50,7 @@ if(isset($_GET['id'])){
             <a href="./?page=students" class="btn btn-flat btn-default border btn-sm">Cancel</a>
         </div>
     </div>
-</div>
+</div> 
 <script>
     $(function(){
         $('#student_form').submit(function(e){
